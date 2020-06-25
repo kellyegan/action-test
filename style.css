@@ -1,0 +1,10 @@
+body {
+  display flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: Helvetica, sans-serif;
+  width: 200px;
+}
