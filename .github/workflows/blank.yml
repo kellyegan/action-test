@@ -27,7 +27,11 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '10.x'
-
+        
+    # Runs a single command using node
+    - name: Run app.js
+      run: node app.js
+      
     # Runs a single command using the runners shell
     - name: Run a one-line script
       run: echo Hello, world!
