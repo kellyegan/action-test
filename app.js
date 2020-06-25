@@ -6,7 +6,19 @@ getDate = () => {
   return new Intl.DateTimeFormat('en-US').format(Date.now());
 }
 
-fs.writeFile("public/index.html", `<h1>The date is ${getDate()}</h1>`, (error) => {
+const html = `
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <h1>The date is ${getDate()}</h1>
+  </body>
+</html>
+`;
+
+fs.writeFile("public/index.html", html, (error) => {
   if(error) {
     return console.log(error);
   }
