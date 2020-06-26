@@ -14,7 +14,7 @@ const html = `
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <h1>The date is ${getDate()}</h1>
+    <h1>This site was last updated ${getDate()}</h1>
   </body>
 </html>
 `;
